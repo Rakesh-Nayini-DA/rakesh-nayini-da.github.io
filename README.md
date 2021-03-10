@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+Reference 1: https://www.freecodecamp.org/news/hosting-on-github-pages-with-git-submodules-36815856c3f1/
+Reference 2: https://stackoverflow.com/questions/8191299/update-a-submodule-to-the-latest-commit
 
-You can use the [editor on GitHub](https://github.com/Rakesh-Nayini-DA/rakesh-nayini-da.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+#GitHub GUI:
+1. Create a new Home Repo (rakesh-nayini-da.github.io)
+2. Setup Home page with Jekyll files
+3. Create a sub repo 1 (NetSuite-API)
+4. Create a sub repo 2 (NetSuite-Wizard)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#GitHub CLI:
+	1. Clone a Home Repo
+	2. Open CLI with Home Repo Path
+	3. cmd: git init
+	4. cmd: git submodule add https://github.com/Rakesh-Nayini-DA/NetSuite-API.git
+	5. cmd: git submodule add https://github.com/Rakesh-Nayini-DA/NetSuite-Wizard.git
+	6. cmd: git commit -m "added submodules for API and Wizard" 
+	7. cmd: git remote add origin https://github.com/Rakesh-Nayini-DA/rakesh-nayini-da.github.io.git #check required or not
+	8. cmd: git push origin main
 
-### Markdown
+	Now, submodules updated to MAIN Branch HOME Repo (like NetSuite-API @ 797c7f6...)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+#Setup API docs on sub repo 1 (NetSuite-API) using GitHub for Desktop:
+	1. Clone repo to the local and commit required changes directly to MAIN Branch
+	2. the Only folder of API needed files (not required entire Jekyll files)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+#Setup API docs on sub repo 2 (NetSuite-Wizard) using GitHub for Desktop:
+	1. Clone repo to the local and commit required changes directly to MAIN Branch
+	2. the Only folder of API needed files (not needed entire Jekyll files)
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+#Getting Changes of submodules to Home repo using GitHub CLI):
+	####Updating Recent Changes for API:
+		1. Navigate to submodule path (eg: \rakesh-nayini-da.github.io\NetSuite-API)
+		2. cmd: git pull origin main
+		3. cmd: cd .. (return to Home Repo)
+		4. cmd: git status
+		5. cmd: git add NetSuite-API
+		6. cmd: git commit -m "Getting updtes from API"
+		7. cmd: git push origin main
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Rakesh-Nayini-DA/rakesh-nayini-da.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+	####Updating Recent Changes for Wizard:
+		1. Navigate to submodule path (eg: \rakesh-nayini-da.github.io\NetSuite-Wizard)
+		2. cmd: git pull origin main
+		3. cmd: cd .. (return to Home Repo)
+		4. cmd: git status
+		5. cmd: git add NetSuite-Wizard
+		6. cmd: git commit -m "Getting updtes from Wizard"
+		7. cmd: git push origin main
