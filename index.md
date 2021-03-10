@@ -9,7 +9,7 @@ permalink: /
 #  Breadwinner for NetSuite
 
 
-## Hey, want the API? It's [here](../api).
+#### Hey, want the API? It's [here](../api).
 
-## Want the guided wizard instructions? That's [here](../wizard).
+#### Want the guided wizard instructions? That's [here](../wizard).
 
