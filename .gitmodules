@@ -1,0 +1,6 @@
+[submodule "NetSuite-API"]
+	path = NetSuite-API
+	url = https://github.com/Rakesh-Nayini-DA/NetSuite-API.git
+[submodule "NetSuite-Wizard"]
+	path = NetSuite-Wizard
+	url = https://github.com/Rakesh-Nayini-DA/NetSuite-Wizard.git
