@@ -6,8 +6,6 @@ description: "Breadwinner for NetSuite Docs on GitHub Pages."
 permalink: /
 ---
 
-#  Breadwinner for NetSuite
-
 
 #### Hey, want the API? It's [here](../api).
 
